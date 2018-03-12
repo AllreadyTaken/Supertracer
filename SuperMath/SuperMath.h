@@ -19,7 +19,7 @@ namespace SuperMath
   {
   public:
     float m_x, m_y, m_z;
-    const float Length = std::sqrtf(m_x * m_x + m_y * m_y + m_z * m_z);
+
     Vector3();
     Vector3(float x, float y, float z);
     Vector3(Point3 start, Point3 end);
@@ -52,7 +52,7 @@ namespace SuperMath
 
     float Dot(const Vector3& lhs, const Vector3& rhs);
     float Angle(const Vector3& lhs, const Vector3& rhs);
-
+    float Length();
   };
 
   struct Matrix4x4 

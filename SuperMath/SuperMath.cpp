@@ -70,12 +70,22 @@ float Vector3::Dot(const Vector3 & lhs, const Vector3 & rhs)
   return result;
 }
 
+float Vector3::Length()
+{
+ float result = std::sqrtf(m_x * m_x + m_y * m_y + m_z * m_z);
+ return result;
+}
+
 float Vector3::Angle(const Vector3 & lhs, const Vector3 & rhs)
 {
-  float cosalpha = Dot(lhs, rhs) / (lhs.Length * rhs.Length);
+  float lhs_l = lhs.Length();
+
+  float cosalpha = Dot(lhs, rhs) / (lhs.Length() * rhs.Length());
   float result = acos(cosalpha);
   return result;
 }
+
+
 
 Matrix4x4::Matrix4x4()
 {
