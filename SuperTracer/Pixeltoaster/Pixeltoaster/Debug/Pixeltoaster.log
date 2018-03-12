@@ -1,0 +1,4 @@
+﻿  PixelToaster.cpp
+d:\freizeit\raytracer\supertracer\supertracer\supertracer\pixeltoaster\pixeltoasterwindows.h(1111): warning C4018: '>=': signed/unsigned mismatch
+d:\freizeit\raytracer\supertracer\supertracer\supertracer\pixeltoaster\pixeltoasterwindows.h(1111): warning C4018: '<=': signed/unsigned mismatch
+  Pixeltoaster.vcxproj -> D:\Freizeit\raytracer\SuperTracer\SuperTracer\Debug\Pixeltoaster.lib
